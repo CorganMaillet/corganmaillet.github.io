@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import FontAwesome from 'next/script'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Main from '../components/Main'
@@ -10,9 +11,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Clint | Front-End Developer</title>
-        <meta name="description" content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences." />
+        <title>Corgan Maillet | Programmer</title>
+        <meta name="description" content="I am a programmer focusing on video games and first responder software." />
         <link rel="icon" href="/fav.png" />
+        <FontAwesome src="https://kit.fontawesome.com/74b1c2a5ca.js" />
       </Head>
     <Main />
     <About />

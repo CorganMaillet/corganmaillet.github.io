@@ -10,19 +10,19 @@ const Main = () => {
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
           <p className='uppercase text-sm tracking-widest text-gray-600'>
-            LET&#39;S BUILD SOMETHING TOGETHER
+            EDUCATION THROUGH GAMING
           </p>
           <h1 className='py-4 text-gray-700'>
-            Hi, I&#39;m <span className='text-[#5651e5]'> Clint</span>
+            Hello, my name is <span className='text-[#812fc1]'> Corgan</span>
           </h1>
-          <h1 className='py-2 text-gray-700'>A Front-End Web Developer</h1>
+          <h2 className='py-2 text-gray-700'>Video Game Programmer</h2>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
-            I’m focused on building responsive front-end web applications
-            integrating back-end technologies.
+            I focus most of my time on developing indie games and 
+            models ranging from the Great War through modern wars.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
+              href='https://www.linkedin.com/in/corgan-maillet-5956a7178/'
               target='_blank'
               rel='noreferrer'
             >
@@ -31,7 +31,7 @@ const Main = () => {
               </div>
             </a>
             <a
-              href='https://github.com/fireclint'
+              href='https://github.com/CorganMaillet'
               target='_blank'
               rel='noreferrer'
             >
