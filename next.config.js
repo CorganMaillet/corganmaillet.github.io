@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  basePath: "/index",
+  output: "export",
   reactStrictMode: true,
-  basePath: 'corganmaillet.github.io' 
 }
 
 module.exports = nextConfig
