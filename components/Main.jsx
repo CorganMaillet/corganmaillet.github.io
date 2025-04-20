@@ -1,19 +1,29 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
+import faveImg from '../public/fav.png';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Main = () => {
   return (
-    <div id='home' className='w-full h-screen text-center'>
+    (<div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
+          <Image
+
+            src={faveImg}
+            alt='/'
+            width='175'
+            height='50'
+            className='mx-auto p-2 flex justify-center items-center'
+          />
           <p className='uppercase text-sm tracking-widest text-gray-600'>
             EDUCATION THROUGH GAMING
           </p>
           <h1 className='py-4 text-gray-700'>
-            Hello, my name is <span className='text-[#812fc1]'> Corgan</span>
+            Hello, my name is <span className='text-[#5d34c6ff]'> Corgan</span>
           </h1>
           <h2 className='py-2 text-gray-700'>Video Game Programmer</h2>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
@@ -39,12 +49,12 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-            <Link href='/#contact'>
+            <Link href='/#contact' legacyBehavior>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href='/resume'>
+            <Link href='/resume' legacyBehavior>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <BsFillPersonLinesFill />
               </div>
@@ -52,7 +62,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div>)
   );
 };
 

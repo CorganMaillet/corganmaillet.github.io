@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import AboutImg from '../public/assets/about.jpg';
+import AboutImg from '../public/assets/about.png';
 
 const About = () => {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
+    (<div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
@@ -29,7 +29,7 @@ const About = () => {
             to have a special place in developing software to improve the lives
             of all first responders.
           </p>
-          <Link href='/#projects'>
+          <Link href='/#projects' legacyBehavior>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
               Check out some of my latest projects.
             </p>
@@ -39,7 +39,7 @@ const About = () => {
           <Image src={AboutImg} className='rounded-xl' alt='/' />
         </div>
       </div>
-    </div>
+    </div>)
   );
 };
 
