@@ -10,7 +10,7 @@ import NavLogo from '../public/assets/navLogo.png'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
+  const [navBg, setNavBg] = useState('#dbd4dcff');
   const [linkColor, setLinkColor] = useState('#1f2937');
   // const [position, setPosition] = useState('fixed')
   // const router = useRouter();
@@ -46,7 +46,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
+    (<div
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
@@ -56,15 +56,15 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-          <a>
-            <Image
-              src={NavLogo}
-              alt='/'
-              width='125'
-              height='50'
-              className='cursor-pointer'
-            />
-          </a>
+
+          <Image
+            src={NavLogo}
+            alt='/'
+            width='75'
+            height='50'
+            className='cursor-pointer'
+          />
+
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
@@ -97,7 +97,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {/* Mobile Menu */}
       {/* Overlay */}
       <div
@@ -116,14 +115,14 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-                <a>
-                  <Image
-                    src={NavLogo}
-                    width='87'
-                    height='35'
-                    alt='/'
-                  />
-                </a>
+
+                <Image
+                  src={NavLogo}
+                  width='87'
+                  height='35'
+                  alt='/'
+                />
+
               </Link>
               <div
                 onClick={handleNav}
@@ -140,32 +139,32 @@ const Navbar = () => {
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
-              <Link href='/'>
+              <Link href='/' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Home
                 </li>
               </Link>
-              <Link href='/#about'>
+              <Link href='/#about' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   About
                 </li>
               </Link>
-              <Link href='/#skills'>
+              <Link href='/#skills' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Skills
                 </li>
               </Link>
-              <Link href='/#projects'>
+              <Link href='/#projects' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Projects
                 </li>
               </Link>
-              <Link href='/resume'>
+              <Link href='/resume' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Resume
                 </li>
               </Link>
-              <Link href='/#contact'>
+              <Link href='/#contact' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Contact
                 </li>
@@ -194,7 +193,7 @@ const Navbar = () => {
                     <FaGithub />
                   </div>
                 </a>
-                <Link href='/#contact'>
+                <Link href='/#contact' legacyBehavior>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
@@ -202,7 +201,7 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href='/resume'>
+                <Link href='/resume' legacyBehavior>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
@@ -215,7 +214,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div>)
   );
 };
 
