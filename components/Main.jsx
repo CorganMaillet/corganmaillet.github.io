@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
-import faveImg from '../public/assets/navlogo.png';
+import faveImg from '../public/assets/navLogo.png';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
